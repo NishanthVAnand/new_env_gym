@@ -1,7 +1,8 @@
 # New GYM environments!
 This repository containes the new gym environments that I will be using in my research.
 Currently the repository has the following environments:
-1. Random Walk
+**1. Random Walk:**
+
    19-state random walk described in the sutton and barto book of reinforcement learning.
    
 ## Requirements
