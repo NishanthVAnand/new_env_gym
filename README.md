@@ -1,10 +1,10 @@
 # New GYM environments!
-This repository containes the new gym environments that I will be using in my research.
-Currently the repository has the following environments:
+This repository contains the new gym environments that I will be using in my research.
+Currently the repository supports the following environments:
 
 **1. Random Walk:**
 
-   19-state random walk described in the sutton and barto book of reinforcement learning.
+   19-state random walk described in the sutton and barto's book of reinforcement learning.
    
 ## Requirements
 This package requires,
@@ -25,3 +25,4 @@ This package requires,
   import gym
   env = gym.make('RandomWalk-v0') # 19-state random walk environment is created.
   ```
+  creates a new 19-state RandomWalk environment.
