@@ -18,7 +18,7 @@ class RandomWalk(gym.Env):
     The agent starts in a state that is located in between both
     these terminal states.
     """
-    def __init__(self, n=19, slip=0.0, small=-1, large=1):
+    def __init__(self, n=20, slip=0.1, small=0, large=1):
         self.n = n
         self.slip = slip  # probability of 'slipping' an action
         self.small = small  # payout for 'backwards' action
