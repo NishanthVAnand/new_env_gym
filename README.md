@@ -11,6 +11,7 @@ Currently the repository supports the following environments:
   * does state exist towards right?
   * does state exist towards bottom?
   * does state exist towards left?
+
 **pomdpGridWorld-v0 and pomdpGridWorld-v1** are the environment ids for 4x4 and 8x8 versions respectively.
    
 ## Requirements
