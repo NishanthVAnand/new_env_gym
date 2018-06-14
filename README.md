@@ -2,9 +2,16 @@
 This repository contains the new gym environments that I will be using in my research.
 Currently the repository supports the following environments:
 
-**1. Random Walk:** 19-state random walk described in the sutton and barto's book of reinforcement learning.
+**1. Random Walk:** 19-state random walk described in the sutton and barto's book of reinforcement learning. **RandomWalk-v0** is the environment id.
 
-**2. Grid World:** There are two maps in the grid world environment, a 4x4 version and a 8x8 version. The start state is (0,0), the goal state is (3,3) (in case of 4x4 grid) and (7,7) (in case of 8x8 grid). Each state has 4 possible actions west:0, east:2, south:1, north:3. The goal state has a reward of +1. There is a slippery element involved. The agents takes the action you ask it to take only 80% of the times and for the rest of the times, it takes actions perpendicular to the direction you ask it to take with a proabaility of 10% for either of the perpendicular actions.
+**2. Grid World:** There are two maps in the grid world environment, a 4x4 version and a 8x8 version. The start state is (0,0), the goal state is (3,3) (in case of 4x4 grid) and (7,7) (in case of 8x8 grid). Each state has 4 possible actions west:0, east:2, south:1, north:3. The goal state has a reward of +1. There is a slippery element involved. The agents takes the action you ask it to take only 80% of the times and for the rest of the times, it takes actions perpendicular to the direction you ask it to take with a proabaility of 10% for either of the perpendicular actions. **gridWorld-v0 and gridWorld-v1** are the environment ids for 4x4 and 8x8 versions respectively.
+
+**3. POMDP Grid World:** These grid worlds are the same except that the agent state is different from the actual state. The agent is a tuple of 4 boolean numbers, can be thought of a set of 4 sensor readings with each sensor answering the following questions:
+  * does state exist towards top?
+  * does state exist towards right?
+  * does state exist towards bottom?
+  * does state exist towards left?
+**pomdpGridWorld-v0 and pomdpGridWorld-v1** are the environment ids for 4x4 and 8x8 versions respectively.
    
 ## Requirements
 This package requires,
