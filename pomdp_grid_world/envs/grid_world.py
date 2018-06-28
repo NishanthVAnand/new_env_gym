@@ -61,7 +61,7 @@ class DiscreteEnv(Env):
         self.nA = nA
 
         self.action_space = spaces.Discrete(self.nA)
-        self.observation_space = spaces.Discrete(self.nS)
+        self.observation_space = spaces.tuple(spaces.discrete(2),spaces.discrete(2))
 
         self.seed()
         self.reset()
