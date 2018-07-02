@@ -13,6 +13,16 @@ Currently the repository supports the following environments:
   * does state exist towards left?
 
 **pomdpGridWorld-v0 and pomdpGridWorld-v1** are the environment ids for 4x4 and 8x8 versions respectively.
+
+**4. Parr and Russell Grid World:** This is a simple 4x3 grid world with two termination states,
+  * A positive terminal state with a reward of +1
+  * A negative terminal state with a reward of -1
+The observation is a tuple of two elements with each element answering the following question,
+  * Is there an obstacle towards my left?
+  * Is there an obstacle towards my right?
+At each timestep the agent gets a reward of -0.04. Agent can take any of the 4 actions - West, South, East and North.
+
+**parr_russell-v0** is the environment id.
    
 ## Requirements
 This package requires,
